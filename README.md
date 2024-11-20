@@ -107,3 +107,73 @@ plt.grid(True)
 plt.show()
 ```
 
+## Obchodní cestujííc the fuck
+```python
+import numpy as np 
+from pulp import *
+import random
+
+ # počet měst
+n = 6
+
+# generování náhodné matice
+time_matrix = np.zeros((n, n))  
+for i in range(n):
+    for j in range(i + 1, n):  
+        time_matrix[i, j] = random.randint(1, 20)  
+        time_matrix[j, i] = time_matrix[i, j] 
+row,col = time_matrix.shape
+
+problem = LpProblem('Problém cestujícího obchodníka', LpMinimize)
+
+decisionVariableX = LpVariable.dicts('decisionVariable_X', ((i, j) for i in range(row) for j in range(row)), lowBound=0, upBound=1, cat='Integer')
+
+decisionVariableU = LpVariable.dicts('decisionVariable_U', (i for i in range(row)), lowBound=1, cat='Integer')
+
+problem += lpSum(time_matrix[i][j] * decisionVariableX[i, j] for i in range(row) for j in range(row))
+
+for i in range(row):
+  problem += (decisionVariableX[i,i] == 0) 
+  problem += lpSum(decisionVariableX[i,j] for j in range(row))==1 
+  problem += lpSum(decisionVariableX[j,i] for j in range(row)) ==1 
+  for j in range(row):
+    if i != j and (i != 0 and j != 0):
+        problem += decisionVariableU[i]  <=  decisionVariableU[j] + row * (1 - decisionVariableX[i, j])-1 # sub-tour elimination for truck
+
+status = problem.solve() 
+print(f"status: {problem.status}, {LpStatus[problem.status]}")
+print(f"objective: {problem.objective.value()}")
+for var in problem.variables():
+    if (problem.status == 1):
+        if (var.value() !=0):
+            print(f"{var.name}: {var.value()}")
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+city_coordinates = {
+    0: (0, 0),
+    1: (1, 2),
+    2: (3, 1),
+    3: (2, 4),
+    4: (4, 3),
+    5: (5, 0),
+}
+
+plt.figure(figsize=(8, 6))
+for city, coords in city_coordinates.items():
+    plt.scatter(coords[0], coords[1], color='magenta', s=100)
+    plt.text(coords[0] + 0.1, coords[1] + 0.1, str(city), fontsize=12)
+for i in range(row):
+    for j in range(row):
+        if decisionVariableX[i, j].varValue > 0.5:  # Pokud je cesta aktivní
+            x_coords = [city_coordinates[i][0], city_coordinates[j][0]]
+            y_coords = [city_coordinates[i][1], city_coordinates[j][1]]
+            plt.plot(x_coords, y_coords, color='deeppink')
+
+plt.title('Optimální trasa obchodního cestujícího', fontweight="bold")
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.show()
+```
+
