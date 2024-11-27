@@ -217,3 +217,60 @@ print("\n")
 print(f"Optimal solution: {problem.objective.value()}")
 ```
 
+## Přiřazovací problém 
+```python
+from pulp import *
+
+x11 = LpVariable("x11", cat="Binary")
+x12 =  LpVariable("x12", cat="Binary")
+x13 =  LpVariable("x13", cat="Binary")
+x14 =  LpVariable("x14", cat="Binary")
+x15 =  LpVariable("x15", cat="Binary")
+x21 =  LpVariable("x21", cat="Binary")
+x22 =  LpVariable("x22", cat="Binary")
+x23 =  LpVariable("x23", cat="Binary")
+x24 =  LpVariable("x24", cat="Binary")
+x25 =  LpVariable("x25", cat="Binary")
+x31 =  LpVariable("x31", cat="Binary")
+x32 =  LpVariable("x32", cat="Binary")
+x33 =  LpVariable("x33", cat="Binary")
+x34 =  LpVariable("x34", cat="Binary")
+x35 =  LpVariable("x35", cat="Binary")
+x41 =  LpVariable("x41", cat="Binary")
+x42 =  LpVariable("x42", cat="Binary")
+x43 =  LpVariable("x43", cat="Binary")
+x44 =  LpVariable("x44", cat="Binary")
+x45 =  LpVariable("x45", cat="Binary")
+x51 =  LpVariable("x51", cat="Binary")
+x52 =  LpVariable("x52", cat="Binary")
+x53 =  LpVariable("x53", cat="Binary")
+x54 =  LpVariable("x54", cat="Binary")
+x55 =  LpVariable("x55", cat="Binary")
+
+problem = LpProblem("myProblem", LpMinimize)
+problem += 5 * x11 + 10 * x12 + 5 * x13 + 15 * x14 + 20 * x15 + 10 * x21 + 20 * x22 + 10 * x23 + 15 * x24 + 5 * x25 + 10 * x31 + 30 * x32 + 10 * x33 + 5 * x34 + 5 * x35 + 10 * x41 + 5 * x42 + 10 * x43 + 0 * x44 + 0 * x45 + 1 * x51 + 5 * x52 + 5 * x53 + 15 * x54 + 20 * x55
+
+problem += x11 + x12 + x13 + x14 + x15 == 1
+problem += x21 + x22 + x23 + x24 + x25 == 1
+problem += x31 + x32 + x33 + x34 + x35 == 1
+problem += x41 + x42 + x43 + x44 + x45 == 1
+problem += x51 + x52 + x53 + x54 + x55 == 1
+
+problem += x11 + x21 + x31 + x41 + x51 == 1
+problem += x12 + x22 + x32 + x42 + x52 == 1
+problem += x13 + x23 + x33 + x43 + x53 == 1
+problem += x14 + x24 + x34 + x44 + x54 == 1
+problem += x15 + x25 + x35 + x45 + x55 == 1
+
+
+
+
+print(problem)
+status = problem.solve()
+print(f"Status:\n{LpStatus[status]}\n")
+print("Solution:")
+for v in problem.variables():
+  print(f"\t\t{v.name} = {v.varValue}")
+print("\n")
+print(f"Optimal solution: {problem.objective.value()}")
+```
