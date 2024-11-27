@@ -177,3 +177,43 @@ plt.ylabel('Y')
 plt.show()
 ```
 
+## dopravní problém
+```python
+from pulp import *
+
+x11 = LpVariable("x11", lowBound = 0)
+x12 =  LpVariable("x12", lowBound = 0)
+x13 =  LpVariable("x13", lowBound = 0)
+x21 =  LpVariable("x21", lowBound = 0)
+x22 =  LpVariable("x22", lowBound = 0)
+x23 =  LpVariable("x23", lowBound = 0)
+x31 =  LpVariable("x31", lowBound = 0)
+x32 =  LpVariable("x32", lowBound = 0)
+x33 =  LpVariable("x33", lowBound = 0)
+x41 =  LpVariable("x41", lowBound = 0)
+x42 =  LpVariable("x42", lowBound = 0)
+x43 =  LpVariable("x43", lowBound = 0)
+x51 =  LpVariable("x51", lowBound = 0)
+x52 =  LpVariable("x52", lowBound = 0)
+x53 =  LpVariable("x53", lowBound = 0)
+
+problem = LpProblem("myProblem", LpMinimize)
+problem += 100 * x11 + 75 * x12 + 40 * x13 + 20 * x21 + 75 * x22 + 80 * x23 + 80 * x31 + 15 * x32 + 60 * x33 + 70 * x41 + 45 * x42 + 50 * x43 + 30 * x51 + 85 * x52 + 90 * x53
+problem += x11 + x12 + x13 == 20
+problem += x21 + x22 + x23 == 30
+problem += x31 + x32 + x33 == 40
+problem += x41 + x42 + x43 == 35
+problem += x51 + x52 + x53 == 25
+problem += x11 + x21 + x31 + x41 + x51 == 50
+problem += x12 + x22 + x32 + x42 + x52 == 50
+problem += x13 + x23 + x33 + x43 + x53 == 50
+print(problem)
+status = problem.solve()
+print(f"Status:\n{LpStatus[status]}\n")
+print("Solution:")
+for v in problem.variables():
+  print(f"\t\t{v.name} = {v.varValue}")
+print("\n")
+print(f"Optimal solution: {problem.objective.value()}")
+```
+
