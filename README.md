@@ -1,49 +1,51 @@
 # KI-OPR
 
 ## Duality
-(Duality Problem 1,2 - Linear Programming Problems (LPP))[https://www.youtube.com/watch?v=drU7dOa836M]
+- [Duality Problem 1,2 - Linear Programming Problems (LPP)](https://www.youtube.com/watch?v=drU7dOa836M)
 ### unrestricted variables
-(Duality Problem 3 - Linear Programming Problems (LPP))[https://www.youtube.com/watch?v=TiEdWbAVpeg]
-(Duality Problem 4 - Linear Programming Problems (LPP))[https://www.youtube.com/watch?v=fCxrNxnnmS0]
-(Duality Problem 5 - Linear Programming Problems (LPP))[https://www.youtube.com/watch?v=c6Ak_MOWwRo]
+- [Duality Problem 3 - Linear Programming Problems (LPP)](https://www.youtube.com/watch?v=TiEdWbAVpeg)  
+- [Duality Problem 4 - Linear Programming Problems (LPP)](https://www.youtube.com/watch?v=fCxrNxnnmS0)  
+- [Duality Problem 5 - Linear Programming Problems (LPP)](https://www.youtube.com/watch?v=c6Ak_MOWwRo)
 
 ## Simplex method
 ### One phase method
-(Intro to Simplex Method | Solve LP | Simplex Tableau)[https://www.youtube.com/watch?v=9YKLXFqCy6E&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=2]
+- [Intro to Simplex Method | Solve LP | Simplex Tableau](https://www.youtube.com/watch?v=9YKLXFqCy6E&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=2)  
 ### Big M method
-(Simplex Method 2 | Big M Tableau | Minimization Problem)[https://www.youtube.com/watch?v=btjxqq-vMOg]
+- [Simplex Method 2 | Big M Tableau | Minimization Problem](https://www.youtube.com/watch?v=btjxqq-vMOg)  
 ### Two phase method
-(2 Phase Method)[https://www.youtube.com/watch?v=1iQv66APoTQ]
+- [2 Phase Method](https://www.youtube.com/watch?v=1iQv66APoTQ)
 
 ## Transportation problem
 ### Phase 1
 - Finding **initial basic feasible solution**: 
 #### North-west method
-(Transportation Model | North-West Corner method - Balanced Model | Operations Research)[https://www.youtube.com/watch?v=VIPtuo8zEhs]
+- [Transportation Model | North-West Corner method - Balanced Model | Operations Research](https://www.youtube.com/watch?v=VIPtuo8zEhs)  
 #### Least cost method - lepší pro MODI method
-(Transportation Model | Least Cost method - Balanced Model | Operations Research)[https://www.youtube.com/watch?v=1EGXueT-_ig]
+- [Transportation Model | Least Cost method - Balanced Model | Operations Research](https://www.youtube.com/watch?v=1EGXueT-_ig)  
 ### Phase 2
 - Finding optimal solution:
 #### MODI method (8:16)
-(Transportation problem [ MODI method - U V method with Optimal Solution ] )[https://www.youtube.com/watch?v=-w2z3MVTcQA&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=9]
+- [Transportation problem [ MODI method - U V method with Optimal Solution ]](https://www.youtube.com/watch?v=-w2z3MVTcQA&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=9)
 
 ## Assignment problem
 ### Hungarian method
-(How to Solve an Assignment Problem Using the Hungarian Method)[https://www.youtube.com/watch?v=ezSx8OyBZVc&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=10]
-
+- [How to Solve an Assignment Problem Using the Hungarian Method](https://www.youtube.com/watch?v=ezSx8OyBZVc&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=10)
+#### Unbalanced problem
+- [Assignment model, Part-5 : Unbalanced assignment problems](https://www.youtube.com/watch?v=UrnAZJ9iy_s)
 ## CPM
-- tady řeší uplně stejnou úlohu jakou máme zadanou na moodlu
-  
-(Crashing of a Project Network - Example 4 | An Important Concept | CPM | PERT | Easy Method)[https://www.youtube.com/watch?v=SJTJLWFw7rE&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=1]
+- tady řeší uplně stejnou úlohu jakou máme zadanou na moodlu  
+- [Crashing of a Project Network - Example 4 | An Important Concept | CPM | PERT | Easy Method](https://www.youtube.com/watch?v=SJTJLWFw7rE&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=1)  
 
-(Crashing Of Project Network - Example 1 | 3 Critical Paths | )[https://www.youtube.com/watch?v=cPg71FOUdYM]
-(Crashing of a Project Network - Example 2 | Big Network |)[https://www.youtube.com/watch?v=orqJkZGpJp8&t=1876s]
-(Crashing of a Project Network - Example 3 | Three Critical paths |)[https://www.youtube.com/watch?v=bLkkTHpm2Wk]
-(Crashing of a Project Network - Example 5 | A Tricky Problem | )[https://www.youtube.com/watch?v=5qpcNEb6cL0]
-(Crashing of a Project Network - Example 6 | Big Network having 2 Critical paths |)[https://www.youtube.com/watch?v=HZzE8alRFk0]
+- [Crashing Of Project Network - Example 1 | 3 Critical Paths](https://www.youtube.com/watch?v=cPg71FOUdYM)  
+- [Crashing of a Project Network - Example 2 | Big Network](https://www.youtube.com/watch?v=orqJkZGpJp8&t=1876s)  
+- [Crashing of a Project Network - Example 3 | Three Critical paths](https://www.youtube.com/watch?v=bLkkTHpm2Wk)  
+- [Crashing of a Project Network - Example 5 | A Tricky Problem](https://www.youtube.com/watch?v=5qpcNEb6cL0)  
+- [Crashing of a Project Network - Example 6 | Big Network having 2 Critical paths](https://www.youtube.com/watch?v=HZzE8alRFk0)
+
 ## PERT
-- stejný úlohy jako sme údajně dělali na cviku
-(PERT - Project Evaluation Review and Technique in Project Management)[https://www.youtube.com/watch?v=WrAf6zdteXI&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=11]
+- stejný úlohy jako sme údajně dělali na cviku  
+- [PERT - Project Evaluation Review and Technique in Project Management](https://www.youtube.com/watch?v=WrAf6zdteXI&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=11)
+
 
 
 ## Kódy 
