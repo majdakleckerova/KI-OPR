@@ -11,11 +11,15 @@
 [https://www.youtube.com/watch?v=1iQv66APoTQ]
 
 ## Transportation problem
-### North-west method
+### Phase 1
+- Finding **initial basic feasible solution**: 
+#### North-west method
 [https://www.youtube.com/watch?v=VIPtuo8zEhs]
-### Least cost method
+#### Least cost method
 [https://www.youtube.com/watch?v=1EGXueT-_ig]
-### MODI method (8:16)
+### Phase 2
+- Finding optimal solution:
+#### MODI method (8:16)
 [https://www.youtube.com/watch?v=-w2z3MVTcQA&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=9]
 
 ## Assignment problem
@@ -23,6 +27,7 @@
 [https://www.youtube.com/watch?v=ezSx8OyBZVc&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=10]
 
 ## CPM
+- tady řeší uplně stejnou úlohu jakou máme zadanou na moodlu
 [https://www.youtube.com/watch?v=SJTJLWFw7rE&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=1]
 
 ## PERT
