@@ -34,8 +34,8 @@
 [https://www.youtube.com/watch?v=WrAf6zdteXI&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=11]
 
 
-
-## Basic úloha
+## Kódy 
+### Basic úloha
 ```python
 from pulp import *
 x = LpVariable("x", lowBound=0, upBound=2, cat="Integer")
@@ -54,7 +54,7 @@ print("\n")
 print(f"Optimal solution: {problem.objective.value()}")
 ```
 
-## Úloha - jídelníček
+### Úloha - jídelníček
 ```python
 from pulp.constants import LpInteger
 from pulp import *
@@ -93,7 +93,7 @@ for v in model.variables():
 print("\n")
 print(f"Celková cena: {model.objective.value()} Kč")
 ```
-## Úloha - proložení bodů přímkou
+### Úloha - proložení bodů přímkou
 ```python
 from pulp import *
 import matplotlib.pyplot as plt
@@ -142,7 +142,7 @@ plt.grid(True)
 plt.show()
 ```
 
-## Obchodní cestujííc the fuck
+### Obchodní cestujííc the fuck
 ```python
 import numpy as np 
 from pulp import *
@@ -212,7 +212,7 @@ plt.ylabel('Y')
 plt.show()
 ```
 
-## dopravní problém
+### dopravní problém
 ```python
 from pulp import *
 
@@ -252,7 +252,7 @@ print("\n")
 print(f"Optimal solution: {problem.objective.value()}")
 ```
 
-## Přiřazovací problém 
+### Přiřazovací problém 
 ```python
 from pulp import *
 
