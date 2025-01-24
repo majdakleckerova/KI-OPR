@@ -33,7 +33,7 @@
 #### Unbalanced problem
 - [Assignment model, Part-5 : Unbalanced assignment problems](https://www.youtube.com/watch?v=UrnAZJ9iy_s)
 ## CPM
-- tady řeší uplně stejnou úlohu jakou máme zadanou na moodlu  
+- tady řeší úlohu kterou máme zadanou na moodlu  
 - [Crashing of a Project Network - Example 4 | An Important Concept | CPM | PERT | Easy Method](https://www.youtube.com/watch?v=SJTJLWFw7rE&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=1)  
 
 - **Další úlohy:**
