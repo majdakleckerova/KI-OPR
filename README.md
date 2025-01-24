@@ -43,7 +43,7 @@
 (Crashing of a Project Network - Example 6 | Big Network having 2 Critical paths |)[https://www.youtube.com/watch?v=HZzE8alRFk0]
 ## PERT
 - stejný úlohy jako sme údajně dělali na cviku
-(PERT - Project Evaluation Review and Technique in Project Management )[https://www.youtube.com/watch?v=WrAf6zdteXI&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=11]
+(PERT - Project Evaluation Review and Technique in Project Management)[https://www.youtube.com/watch?v=WrAf6zdteXI&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=11]
 
 
 ## Kódy 
