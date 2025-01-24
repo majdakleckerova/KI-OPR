@@ -36,6 +36,7 @@
 - tady řeší uplně stejnou úlohu jakou máme zadanou na moodlu  
 - [Crashing of a Project Network - Example 4 | An Important Concept | CPM | PERT | Easy Method](https://www.youtube.com/watch?v=SJTJLWFw7rE&list=PLZTb54-HTBOPtg03d59zNSaRZuJ1hyUxc&index=1)  
 
+- **Další úlohy:**
 - [Crashing Of Project Network - Example 1 | 3 Critical Paths](https://www.youtube.com/watch?v=cPg71FOUdYM)  
 - [Crashing of a Project Network - Example 2 | Big Network](https://www.youtube.com/watch?v=orqJkZGpJp8&t=1876s)  
 - [Crashing of a Project Network - Example 3 | Three Critical paths](https://www.youtube.com/watch?v=bLkkTHpm2Wk)  
